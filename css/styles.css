@@ -4,6 +4,8 @@ body{
     color: #1d2029;
 }
 
+/*Var*/
+
 :root{
     --lime-green: hsl(163, 72%, 41%);
     --bright-red: hsl(356, 69%, 56%);
@@ -15,11 +17,15 @@ body{
     --gray: #5f616d;
 }
 
+/*Header*/
+
 .header{
+    display: none;
     background: #f8f9fe; 
     padding-bottom: 100px;   
     border-radius: 0 0 20px 20px;
     padding-top: 2em;
+    
 }
 
 h1{
@@ -40,6 +46,7 @@ h1{
 }
 
 .top-cards{
+    display: none;
     margin-top: -50px;
 }
 
@@ -48,7 +55,10 @@ h1{
     grid-row-gap: 25px;
 }
 
+/*Card-Social Media*/
+
 .card{
+    
     border-radius: 8px;
     overflow: hidden;
     background: #f0f3fa;
@@ -125,5 +135,63 @@ h1{
 }
 
 .card-today img{
+    margin-right: 5px;
+}
+
+/*Overview*/
+
+.overview{
+    margin-bottom: 1000px;
+}
+
+.card-small{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    background: #f0f3fa;
+    border-radius: 8px;
+    padding: 1.7em;
+}
+
+.card-small p{
+    margin: 0;
+}
+
+.card-small-views{
+    color: var(--gray);
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.card-small-icon{
+    text-align: right;    
+}
+
+.card-small-number{
+    font-size: 2.4em;
+    font-weight: bold; 
+    line-height: .9;   
+}
+
+.card-small-percentage{
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    color: var(--lime-green);
+    justify-content: flex-end;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.card-small-percentage.is-danger{
+    color: var(--bright-red);
+}
+
+.card-small-percentage span{
+    display: flex;
+    align-items: center;
+}
+
+.card-small-percentage img{
     margin-right: 5px;
 }
